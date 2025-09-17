@@ -1,0 +1,49 @@
+IMPORTANT REMINDER: Do NOT edit whatever is in the `tests` folder. I will mark you automatic 0 if you do.
+
+Instructions:
+
+1. Implement `void add(Entry* entry)` in the boardarray.h.
+    Algorithm (in order):
+        a. Traverse the array up until the last element
+        b. Compare (using the bool compare() function of Entry) the `entry` to be added to the `existing entry` currently traversed.
+        c. To get the current entry, you can access it via `array[i * sizeof(Entry)]` or `*(array + i * sizeof(Entry)). I will discuss first why is this the case.
+        d. If `entry` to be added is indeed greater than the existing one, `SHIFT RIGHT`
+        e. After shift right, add the new entry to the correct position.
+
+    Things to consider:
+        - You can still add an entry EVEN IF the array is FULL for as long as the newly added array is greater than most scores in the current boardarray
+        - IF ARRAY IS FULL and the SCORE IS TOO LOW TO BE ADDED TO BOARDARRAY, print "<name>'s score is too low to be added!".
+        - You can test in the main() function and interact with it to test your code before running full unit test
+
+2. Navigate to tests folder by running:
+    ```
+        cd src/tests
+    ```
+
+3. Run the unit test on the terminal via:
+    ```
+        g++ test.cpp catch.cpp -o test.exe && ./test.exe
+    ```
+
+4. If you are already finished, run the following terminal command in order:
+    ```
+        git add .
+        git commit -m "feat: implement add() method for boardarray"
+        git push <remote-name>
+    ```
+
+    If you forgot the remote-name for your own forked repository, run the ff:
+    ```
+        git remote -v
+    ```
+
+    It should output something like
+    ```
+        origin   https://github.com/lancevincentsalera/BoardArray.git (fetch)
+        origin   https://github.com/lancevincentsalera/BoardArray.git (push)
+        <remote-name> https://github.com/<your-username>/<repo>.git (fetch)
+        <remote-name> https://github.com/<your-username>/<repo>.git (push)
+    ```
+
+5. Pass the link to your github repo in the MS Teams assignment tab
+        

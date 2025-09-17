@@ -43,8 +43,8 @@ TEST_CASE("Replace lowest score and stay sorted", "[scoreboard]") {
         sb->add(new Entry{"Joanna", "CASE", 90});
         sb->add(new Entry{"Cathy", "CMBA", 88});
         sb->add(new Entry{"Von", "CNAHS", 92});
-        sb->add(new Entry{"Natz", "CCJ", 87}); // Replaces Bob (85)
-        sb->add(new Entry{"Therese", "CEA", 99}); // Replaces Diana (88)
+        sb->add(new Entry{"Natz", "CCJ", 87});
+        sb->add(new Entry{"Therese", "CEA", 99});
         sb->print();
         delete sb;
     });
