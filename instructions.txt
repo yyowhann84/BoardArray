@@ -2,6 +2,11 @@ IMPORTANT REMINDER: Do NOT edit whatever is in the `tests` folder. I will mark y
 
 Instructions:
 
+navigate first inside src folder via:
+```
+    cd src
+```
+
 1. Implement `void add(Entry* entry)` in the boardarray.h.
     Algorithm (in order):
         a. Traverse the array up until the last element
@@ -17,7 +22,7 @@ Instructions:
 
 2. Navigate to tests folder by running:
     ```
-        cd src/tests
+        cd tests
     ```
 
 3. Run the unit test on the terminal via:
