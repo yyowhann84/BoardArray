@@ -3,7 +3,7 @@
 using namespace std;
 
 int main() {
-	Entry* player1;
+	Entry* player1 = new Entry();
 	Board* board = new BoardArray();
     char ans;
     int score;
